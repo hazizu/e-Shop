@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    padding: 0;
+}
+.carousel-arrow {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: 31px;
+    background-position: center;
+    border-radius: 100px;
+    position: absolute;
+    top: 35% !important;
+    margin-top: -20px;
+    z-index: 10;
+    cursor: pointer;
+    box-shadow: 0 0 5px #00000026;
+}
+.carousel-cells .carousel-cell img{
+    width: 100% !important;
+    height: 65% !important;
+    position: relative;
+    object-fit: contain;
+}
+p, span , label, input{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+label {
+    margin-left: 1rem;
+}

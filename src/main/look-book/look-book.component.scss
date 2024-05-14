@@ -1,0 +1,172 @@
+.look-boook-bg{
+    background-image: url('./../../assets/img/LookBook\ \(1\).svg');
+    width: 100%;
+    height: 35rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    margin-top: 10rem;
+    position: relative;
+}
+.lookk-book-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.look-book-info {
+    width: 38rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 30rem;
+}
+.look-book-info span {
+    font-size: 2.5rem;
+    margin-bottom: -0.5rem;
+    display: flex;
+}
+.look-book-info p {
+    font-size: 1.1rem;
+    letter-spacing: 0.03rem;
+    line-height: 1.4rem;
+}
+.images-look {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.images-look1 {
+    width: 100%;
+    height: 40rem;
+    background: blue;
+    display: flex;
+}
+.images-look1-1 {
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center
+}
+.images-look1-2 {
+    width: 50%;
+    height: 100%;
+    background: black;
+    display: flex;
+    flex-direction: column;
+}
+.images-look1-2-1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+}
+.images-look1-2-1-1 {
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+.images-look1-2-1-2 {
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+.images-look1-2-2 {
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+.images-look1-2-2-1 {
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+}
+.images-look1-2-2-2 {
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center
+}
+.images-look2 {
+    width: 100%;
+    height: 34rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.images-look3 {
+    display: flex;
+    width: 100%;
+    height: 40rem;
+}
+.images-look3-1 {
+    width: 50%;
+    background: blue;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+}
+.images-look3-2-1 {
+    width: 100%;
+    height: 50%;
+    background: black;
+    display: flex;
+    flex-direction: row;
+}
+.images-look3-2-1-1 {
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+    background-position-x: center;
+}
+.images-look3-2-1-2 {
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+}
+.images-look3-2-2 {
+    width: 100%;
+    height: 50%;
+    background: aliceblue;
+    display: flex;
+    flex-direction: row;
+}
+.images-look3-2-2-1 {
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: top;
+    background-position-x: center;
+}
+.images-loo3-2-2-2 {
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center
+}
+.images-look3-2{
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center
+}

@@ -1,0 +1,50 @@
+<!-- <div class="content">
+    <div class="logo">
+        <img src="./../../assets/img/Logo-Zium (1).svg">
+    </div>
+    <div class="nav-item-container">
+        <div class="item-link">
+            <img src="./../../assets/img/Vetements.svg">
+        </div>
+        <div class="item-link">
+            <img src="./../../assets/img/Accessoires.svg">
+        </div>
+        <div class="item-link">
+            <img src="./../../assets/img/Collections.svg">
+        </div>
+        <div class="item-link">
+            <img src="./../../assets/img/Vetements.svg">
+        </div>
+    </div>
+    <div class="nav-footer">
+        <img src="./../../assets/img/instagram.svg">
+        <img src="./../../assets/img/Apropos.svg">
+
+    </div>
+</div> -->
+
+<div class="smallContent" *ngIf="router.url !== '/'" (click)="getAccueil()">
+    <div class="logo"> 
+        <img src="./../../assets/img/Logo-Zium (1).svg">
+    </div>
+</div>
+
+<div [ngClass]="{content:true, fullContent:inFull}" *ngIf="router.url === '/'">
+    <span class="closeIcon" *ngIf="inFull" (click)="closeFull()">X</span>
+    <div class="logo"> 
+        <img src="./../../assets/img/Logo-Zium (1).svg">
+    </div>
+    <div class="list-content">
+    <div class="nav-item-container" *ngFor="let nav of navList">
+        <div class="item-link" (click)="getNav(nav)">
+            <img [src]="nav.img">
+            <span [ngClass]="{item_link_lib:true, displayInFull:inFull}">{{nav.libelle}}</span>
+        </div>
+    </div>
+</div>
+    <div class="nav-footer">
+        <img src="./../../assets/img/instagram.svg">
+        <img src="./../../assets/img/Apropos.svg">
+
+    </div>
+</div>

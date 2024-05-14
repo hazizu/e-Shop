@@ -1,0 +1,75 @@
+.cmdBtn {
+   
+}
+.defaul-btn {
+    width: 10rem;
+    position: absolute;
+    left: 1rem;
+    opacity: 1;
+    transition: all 0.1s ease;
+    
+}
+.defaul-btn:hover{
+    //visibility: hidden;
+}
+.cmdBtn:hover{
+    .hover-btn{
+        opacity: 1;
+        width: 13rem;
+        transition: width 0.3s ease-in-out;
+        transition: all 0.4s ease;
+
+    }
+    .defaul-btn{
+        opacity: 0;
+        transition: all 0.1s ease;
+    }
+    
+}
+
+// .defaul-btn:hover, .hover-btn{
+//         visibility: visible;
+// }
+
+.hover-btn{
+    opacity: 0;
+    width: 5rem;
+    background: #998784;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5rem 0rem;
+    border-radius: 5rem;
+    cursor: pointer;
+    position: absolute;
+    left: 1rem;
+    transition: width 0.3s ease-in-out;
+    transition: all 0.2s ease;
+}
+
+.brd-bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 0.3rem;
+}
+.bdr1 {
+    width: 30%;
+    height: 5px;
+    background: black;
+}
+.bdr2 {
+    width: 60%;
+    height: 2px;
+    background: black;
+}
+.hover-btn img {
+    width: 2.2rem;
+}
+.hover-btn span {
+    color: #FFF;
+    border-bottom: 3px solid;
+    line-height: 2rem;
+    margin-top: -0.3rem;
+}

@@ -1,0 +1,61 @@
+.main-container {
+    display: flex;
+    flex-direction: row;
+}
+.main-content-right {
+    flex: 2;
+}
+.banner-content {
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+    margin-left: 8rem;
+}
+.scrolling-container{
+    background: #eee6e5 0% 0% no-repeat padding-box;
+    z-index: 999;
+    position: absolute;
+    top: 100vh;
+    left: 8rem;
+    width: -webkit-fill-available;
+}
+.a-propos-containre {
+    height: 100vh;
+    margin: 2rem 0rem 
+}
+.accessoires-containre {
+    background: lightgray;
+    height: 100vh;
+    margin: 2rem 0rem 
+}
+.search-content {
+    position: fixed;
+    right: 10rem;
+    top: 5rem;
+    width: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 9999;
+}
+.search-content img {
+    width: 1.3rem;
+    height: 1.3rem;
+    cursor: pointer;
+}
+.menu-icon {
+    position: fixed;
+    top: 1.6rem;
+    left: 10rem;
+    z-index: 9999;
+}
+.menu-icon img {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+.images {
+    width: 50%;
+    height: 80%;
+    background: red;
+}

@@ -1,0 +1,40 @@
+<div class="main-container">
+    <div class="menu-icon" (click)="getFullNav()">
+        <img src="./../../assets/img/Menu.svg">
+    </div>
+    <div class="search-content">
+        <img src="./../../assets/img/Search.svg">
+        <img src="./../../assets/img/shopping-cart.svg">
+    </div>
+    <app-nav-bar (clickNav)="getClickedNav($event)" [inFull]="isFullNav"></app-nav-bar>
+    
+   
+    <div class="main-content-right">
+        <router-outlet></router-outlet>
+        <ng-container *ngIf="router.url === '/'">
+        <div class="banner-content">
+            <app-banner></app-banner>
+        </div>
+        <div class="scrolling-container">
+            <div id="apropo">
+                <app-apropos></app-apropos>
+            </div>
+            <div id="article">
+                <app-articles></app-articles>
+            </div>
+            <div id="accessoire">
+                <app-accesoires></app-accesoires>
+            </div>
+            <div id="look">
+                <app-look-book></app-look-book>
+            </div>
+            <app-footer></app-footer>
+               
+            <!-- <div class="accessoires-containre"></div> -->
+
+        </div>
+    </ng-container>
+    </div>
+
+
+</div>

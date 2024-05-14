@@ -1,0 +1,63 @@
+<div class="footer-container">
+    <div class="info-and-form">
+        <div class="informations">
+        <div class="info-entreprise">
+           
+            <img src="./../../assets/img/Logo-big.svg">
+            <div class="contact-info">
+                <span class="title">Nos contacts</span>
+                <span class="over-info">infos@zium.com</span>
+                <span class="over-info">+33 1 06 01 234 568</span>
+                <span class="over-info">75000 Île-de-France, Paris, FRANCE</span>
+            </div>
+            <div class="nav-libelle">
+                <span class="nav-lib">VETEMENTS</span>
+                <span class="nav-lib">ACCESSOIRES</span>
+                <span class="nav-lib">LOOKBOOK</span>
+                <span class="nav-lib">VIDEOS</span>
+            </div>
+            </div>
+        </div>
+        <div class="contact-form">
+            <div class="form-content">
+                <span class="title-form">Écrivez-nous</span>
+                <form [formGroup]="contactForm">
+                <div class="form-1">
+                    <div class="input-group">
+                        <app-input label="Votre nom" controlName="name"></app-input>
+                    </div>
+                    <div class="input-group">
+                        <app-input label="Votre adresse email" controlName="email"></app-input> 
+                    </div>
+                   
+                </div>
+                <div class="form2">
+                    <div class="input-group2">
+                        <span>Votre message</span>
+                        <textarea placeholder="Votre message" formControlName="message"></textarea>
+                    </div>
+                </div>
+                <div class="form-2">
+                    <div class="content-form-2">
+                      
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="signatute-bloc">
+        <div class="footer-bottom-content">
+            <div class="Apropos-footer">
+                <img src="./../../assets/img/Apropos-footer.svg">
+                <span>© 2024 | Zium</span>
+            </div>
+            <div class="Insta-footer">
+                <span>Suivez-nous</span>
+                <img src="./../../assets/img/Insta.svg">
+            </div>
+
+        </div>
+       
+    </div>
+</div>

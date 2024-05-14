@@ -1,0 +1,44 @@
+<div class="article-container">
+    <div class="image-article-title">
+        <div class="article-infon">
+            <span class="title">Articles</span>
+            <p>
+                Nos articles suivent le principe le principe du Feng Shui en étant composés
+                d’une seule matière avec le moins de coutures possible, ne faisant pas d’ourlet
+                pour laisser le tissus s’effilocher.
+                Le but est de jouer avec les altière, les teintes et le patronage, pas les logos et autres designs.
+            </p>
+        </div>
+
+    </div>
+    <div class="articles-content">
+        <div class="colone1">
+            <div class="bg-vetmt"></div>
+            <div class="list_vetement" *ngFor="let vetement of listColone1">
+                <div class="item" (click)="VoirVetement(vetement)">
+                    <div class="item-bg" [style.backgroundImage]="'url('+ vetement.image +')'">
+                        <div class="glass-bg">
+                            <div class="border-eye">
+                                <img src="./../../assets/img/oeil.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="colone2">
+            <div class="list_vetement" *ngFor="let vetement of listColone2">
+                <div class="item" (click)="VoirVetement(vetement)">
+                    <div class="item-bg" [style.backgroundImage]="'url('+ vetement.image +')'">
+                        <div class="glass-bg">
+                            <div class="border-eye">
+                                <img src="./../../assets/img/oeil.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

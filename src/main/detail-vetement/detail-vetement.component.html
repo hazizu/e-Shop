@@ -1,0 +1,64 @@
+<!-- <div class="detail_container detail_bg" [style.backgroundImage]="'url('+ detailsImages[0].path +')'">
+    <div class="details-info"></div>
+</div> -->
+<div class="banner-container">
+    <div class="banner-info">
+        <span class="sub-title">Sample for Zium website.</span>
+        <span class="title">Ensemble chemise et pantalon à ourlet en jean.</span>
+        <span class="title">145€</span>
+        <p>
+            Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre
+            provisoire pour calibrer une mise en page, le texte définitif venant remplacer le
+            provisoire pour calibrer une mise en page, le texte définitif venant remplacer le
+        </p>
+    </div>
+    <div class="choice-content">
+        <div class="choice-action">
+            <div class="couleur-container">
+                <span>Couleurs</span>
+                <div class="list-content-color">
+                    <div class="list-couleur" *ngFor="let color of articlesCouleur ; let i = index">
+                        <div [ngClass]="{color_item:true, selectStyle:colorIndex === i}"
+                            [ngStyle]="{'background-color':color}" (click)="selectColor(color, i)"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="size-container">
+                <span>Tailles</span>
+                <div class="list-content-size">
+                    <div class="list-size" *ngFor="let size of sizes ; let i=index">
+                        <span [ngClass]="{size_item:true, selectSize: sizeIndex === i}"
+                            (click)="selectSize(size, i)">{{size}}</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="qte-container">
+                <span>Quantité</span>
+                <div class="qte-action">
+                    <div class="moins" (click)="decrement()">
+                        <span>-</span>
+                    </div>
+                    {{quantite}}
+                    <div class="plus" (click)="increment()">
+                        <span>+</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="command-btn">
+            <app-stybutton label="Commander" (clicked)="clickToCmd()"></app-stybutton>
+        </div>
+    </div>
+    <div class="background-container" [style.backgroundImage]="'url('+ detailsImages[0].path +')'">
+    </div>
+
+
+    <div class="article-scroll">
+        <carousel [images]="detailsImages">
+
+        </carousel>
+    </div>
+
+</div>
