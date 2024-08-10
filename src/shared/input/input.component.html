@@ -1,4 +1,4 @@
 <div class="input-group">
     <label class="label-style"> {{ label }}</label>
-    <input class="input_bg" [type]="type" [formControlName]="controlName"  [placeholder]="label" />
+    <input [ngClass]="{input_bg:true, borderStyle:isBoder}" [type]="type" [formControlName]="controlName"  [placeholder]="label" />
 </div>

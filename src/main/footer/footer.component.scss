@@ -170,3 +170,80 @@ label.label-style {
     justify-content: space-between;
     align-items: center;
 }
+.defaul-btn {
+    position: absolute;
+    width: 10rem;
+    opacity: 1;
+    transition: all 0.1s ease;
+    color: #FFF;
+
+    
+}
+.defaul-btn:hover{
+    //visibility: hidden;
+}
+.cmdBtn{
+    position: relative;
+    margin-top: 1.5rem;
+}
+.cmdBtn:hover{
+    .hover-btn{
+        opacity: 1;
+        width: 16rem;
+        transition: width 0.3s ease-in-out;
+        transition: all 0.4s ease;
+
+    }
+    .defaul-btn{
+        opacity: 0;
+        transition: all 0.1s ease;
+    }
+    
+}
+
+// .defaul-btn:hover, .hover-btn{
+//         visibility: visible;
+// }
+
+.hover-btn{
+    opacity: 0;
+    width: 12rem;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5rem 0rem;
+    border-radius: 5rem;
+    cursor: pointer;
+    transition: width 0.3s ease-in-out;
+    transition: all 0.2s ease;
+    position: absolute;
+}
+
+
+.brd-bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 0.3rem;
+}
+.bdr1 {
+    width: 30%;
+    height: 5px;
+    background: #FFF;
+}
+.bdr2 {
+    width: 60%;
+    height: 2px;
+    background: #FFF;
+}
+.hover-btn img {
+    width: 2.2rem;
+}
+.hover-btn span {
+    color: #998784;
+    border-bottom: 3px solid;
+    line-height: 2rem;
+    margin-top: -0.3rem;
+}

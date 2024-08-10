@@ -1,0 +1,25 @@
+span.resume_price {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+}
+.item_container {
+    display: flex;
+    flex-direction: row;
+    width: 18rem;
+    /* padding: 1rem; */
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #0000006e;
+    padding-top: 1rem;
+}
+span.resume_caracteristique {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+.item_infos {
+    display: flex;
+    flex-direction: column;
+}
+span.resume_libelle {
+    font-size: 0.9rem;
+}

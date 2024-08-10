@@ -17,6 +17,7 @@ export class InputComponent {
   @Input() controlName:string;
   @Input() label?: string ;
   @Input() type: string = 'text';
+  @Input() isBoder:boolean = false
 
 
   constructor(){

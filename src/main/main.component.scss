@@ -50,8 +50,8 @@
     z-index: 9999;
 }
 .menu-icon img {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
     cursor: pointer;
 }
 .images {
@@ -59,3 +59,32 @@
     height: 80%;
     background: red;
 }
+.resume_content {
+    position: fixed;
+    right: 8rem;
+    top: 7rem;
+    /* width: 5rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 9999;
+    padding: 0;
+    background: #FFF;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 11px -2px gray;
+    height: 0rem;
+    transition: height 0.2s ease-in-out
+}
+.resume_content.displayStyle{
+    height: 27rem;
+    padding: 1.5rem;
+    transition: height 0.2s ease-in-out;
+
+}
+.item_container {
+    display: flex;
+    flex-direction: row;
+    width: 18rem;
+    padding: 1rem;
+}
+

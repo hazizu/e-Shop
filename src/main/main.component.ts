@@ -8,9 +8,16 @@ import { Router } from '@angular/router';
 })
 export class MainComponent {
   isFullNav:boolean = false
+  showMainSearch:boolean = false
+  showResume:boolean = false
+
+
+ 
 
 
   constructor(private el : ElementRef, public router:Router){
+
+  
 
   }
 
@@ -51,6 +58,34 @@ export class MainComponent {
     }
     
   
+  }
+  getSearch(){
+    if(this.showMainSearch){
+      this.showMainSearch = false
+      setTimeout(()=>{
+        this.showMainSearch = true
+      }, 100)
+    }else{
+      this.showMainSearch = true
+    }
+   
+
+  }
+  getResumeCommande(){
+    this.showResume = !this.showResume
+
+  }
+  getSeachedLibelle(data:string){
+    console.log('data search', data)
+    this.showMainSearch = false
+    if(data === 'Robes femme' || data === 'Chemise homme' || data === 'Chemise femme'){
+      this.scrollToSection('article')
+    }else{
+      this.scrollToSection('accessoire')
+    }
+  }
+  valideResume(){
+    this.showResume = !this.showResume
   }
 
 }

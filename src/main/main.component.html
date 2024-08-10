@@ -1,10 +1,16 @@
 <div class="main-container">
-    <div class="menu-icon" (click)="getFullNav()">
+    <app-main-search [isShow]="showMainSearch" (selectedItem)="getSeachedLibelle($event)"></app-main-search>
+    <div class="menu-icon" (click)="getFullNav()" *ngIf="router.url === '/'">
         <img src="./../../assets/img/Menu.svg">
     </div>
     <div class="search-content">
-        <img src="./../../assets/img/Search.svg">
-        <img src="./../../assets/img/shopping-cart.svg">
+        <img src="./../../assets/img/Search.svg" (click)="getSearch()">
+        <img src="./../../assets/img/shopping-cart.svg" (click)="getResumeCommande()">   
+    </div>
+    <div [ngClass]="{resume_content:true, displayStyle:showResume}">
+        <ng-container *ngIf="showResume">
+        <app-resume-commande (emitCmdResume)="valideResume()"></app-resume-commande>
+    </ng-container>
     </div>
     <app-nav-bar (clickNav)="getClickedNav($event)" [inFull]="isFullNav"></app-nav-bar>
     

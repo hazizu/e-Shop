@@ -1,1 +1,44 @@
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas placeat dolorem eveniet quod nesciunt quasi quos architecto iure voluptates porro. Reiciendis dicta necessitatibus quo fugiat odit, facilis iste aliquam voluptatum.</p>
+<div class="main-content">
+    <span class="form-title">Commande d'article</span>
+    <form [formGroup]="commandeForm">
+    <div class="form-content">
+        
+        <div class="form-colone1">
+            <div class="input-group">
+            <app-input controlName="name" label="Votre nom" [isBoder]="true"></app-input>
+            </div>
+            <div class="input-group">
+            <app-input controlName="phone" label="Votre numéro de téléphone" [isBoder]="true"></app-input>
+            </div>
+            <div class="input-group">
+            <app-input controlName="email" label="Votre adresse email" [isBoder]="true"></app-input>
+            </div>
+        </div>
+        <div class="form-colone2">
+            <div class="input-group2">
+                <span>Votre message</span>
+                <textarea placeholder="Votre précision sur la livraison" formControlName="description"></textarea>
+            </div>
+           
+                
+                <div class="cmdBtn" (click)="valideCommande()">
+                    <div class="defaul-btn">
+                        <span>Valider la commande</span>
+                        <div class="brd-bottom">
+                            <div class="bdr1"></div>
+                            <div class="bdr2"></div>
+                        </div>
+                    </div>
+                    <div class="hover-btn" >
+                            <span>Valider la commande</span>
+                            <img src="./../../assets/img/arrow.svg">
+                    </div>
+                </div>
+
+            
+       
+        </div>
+  
+    </div>
+</form>
+</div>

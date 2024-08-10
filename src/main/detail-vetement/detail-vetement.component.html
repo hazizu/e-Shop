@@ -2,6 +2,15 @@
     <div class="details-info"></div>
 </div> -->
 <div class="banner-container">
+    <div class="opacityBloc" *ngIf="getOrderForm" (click)="closeDialog()">
+
+    </div>
+    <div [ngClass]="{dialogForm:true, showDialogForm:getOrderForm}">
+        <img src="./../../assets/img/Close-black.svg" (click)="closeDialog()">
+            <app-commande-form (valideCmdEmit)="validecmd()"></app-commande-form>
+
+     <!-- <span (click)="closeDialog()">Fermer</span> -->
+    </div>
     <div class="banner-info">
         <span class="sub-title">Sample for Zium website.</span>
         <span class="title">Ensemble chemise et pantalon à ourlet en jean.</span>

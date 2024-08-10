@@ -14,6 +14,7 @@ import { IvyCarouselModule } from 'angular-responsive-carousel2';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DetailAccessoireComponent } from './detail-accessoire/detail-accessoire.component';
 import { DetailVetementComponent } from './detail-vetement/detail-vetement.component';
+import { MatDialogModule } from '@angular/material/dialog'; 
 
 
 
@@ -40,6 +41,7 @@ import { DetailVetementComponent } from './detail-vetement/detail-vetement.compo
     SharedModule,
     IvyCarouselModule,
     ReactiveFormsModule,  
+    MatDialogModule
   ]
 })
 export class MainModule { }

@@ -1,0 +1,78 @@
+.main_search_container {
+    height: 0vh;
+    width: 100%;
+    background: black;
+    z-index: 99999;
+    position: fixed;
+    transition: height 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+}
+.close-icn {
+    position: absolute;
+    right: 9rem;
+    top: 3rem;
+    cursor: pointer;
+}
+.show{   
+    height: 100vh;
+    transition: height 0.3s ease;
+}
+.search-input {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 3px solid #E5DBC2;
+    padding-bottom: 0.2rem;
+}
+.search-input input {
+    flex: 2;
+    height: 3rem;
+    font-size: 1.5rem;
+    /* margin-left: 0.5rem; */
+    padding-left: 0.5rem;
+    outline: none;
+    border: none;
+    background: none;
+    color: #E5DBC2;
+}
+.search-input input::placeholder{
+    font-size: 3rem;
+}
+.search-input img {
+    width: 1.5rem;
+}
+.filterLib{
+   color:#E5DBC2
+}
+.filterItem {
+    width: 50%;
+    position: relative;
+}
+.itemfilt {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.itemfilt:hover{
+    background: #e5dbc224;
+    transition: all 0.2s ease;
+
+}
+.notItemText{
+    color: #E5DBC2;
+}
+.block-filter{
+    position: absolute;
+    width: 100%;
+}
