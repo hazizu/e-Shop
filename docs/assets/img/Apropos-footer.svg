@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
-  <g id="Apropos" transform="translate(-110 -950)">
-    <g id="Apropos-2" data-name="Apropos" transform="translate(110 950)">
-      <path id="Tracé_23746" data-name="Tracé 23746" d="M25,0A25,25,0,1,0,50,25,25,25,0,0,0,25,0Zm0,43.75A18.75,18.75,0,1,1,43.75,25,18.75,18.75,0,0,1,25,43.75Z" transform="translate(0 0)" fill="#faf7f2"/>
-      <path id="Tracé_23747" data-name="Tracé 23747" d="M13.612,9.546h-.625a3.285,3.285,0,0,0-3.344,2.9,3.125,3.125,0,0,0,2.833,3.321v9.687a3.125,3.125,0,0,0,6.25,0V14.66a5.115,5.115,0,0,0-5.115-5.115Z" transform="translate(10.44 10.34)" fill="#faf7f2"/>
-      <path id="Tracé_23748" data-name="Tracé 23748" d="M13.689,12.184a3.573,3.573,0,1,0-2.529-1.046A3.575,3.575,0,0,0,13.689,12.184Z" transform="translate(10.957 5.454)" fill="#faf7f2"/>
-    </g>
-  </g>
-</svg>
